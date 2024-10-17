@@ -12,20 +12,14 @@ public class WashingMachine {
             System.out.println("Locking the door");
             System.out.println("Choose number of program");
             int process = intScanner.nextInt();
-            if (process == 1) {
-                System.out.println("Synthetics 1h 15min");
-            }
-            if (process == 2) {
-                System.out.println("Cotton 2h");
-            }
-            if (process == 3) {
-                System.out.println("Neutral 1h 30min");
-            }
-            if (process == 4) {
-                System.out.println("Rinse and spin 30min");
-            }
-            if (process == 0) {
-                System.out.println("Opening the door");
+            //
+            switch (process){
+                case 1 -> System.out.println("Synthetics 1h 15min");
+                case 2 -> System.out.println("Cotton 2h");
+                case 3 -> System.out.println("Neutral 1h 30min");
+                case 4 -> System.out.println("Rinse and spin 30min");
+                case 0 -> System.out.println("Opening the door");
+                default -> System.out.println("Wrong command");
             }
             if (process == 1 || process == 2 || process == 3 || process == 4) {
                 System.out.println("Write START to start chosen program");

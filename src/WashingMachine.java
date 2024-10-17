@@ -12,7 +12,7 @@ public class WashingMachine {
             System.out.println("Locking the door");
             System.out.println("Choose number of program");
             int process = intScanner.nextInt();
-            //
+
             switch (process){
                 case 1 -> System.out.println("Synthetics 1h 15min");
                 case 2 -> System.out.println("Cotton 2h");
